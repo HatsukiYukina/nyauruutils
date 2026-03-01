@@ -19,7 +19,8 @@ public class Tabs {
                     .icon(() -> new ItemStack(FoodItems.SPICY_STRIP.get()))
                     .displayItems((parameters, output) -> {
                         //在这填充物品
-                        output.accept(FoodItems.SPICY_STRIP.get()); //辣椒
+                        output.accept(FoodItems.SPICY_STRIP.get()); //辣条
+                        output.accept(FoodItems.CHOCOLATE.get()); //巧克力
                     })
                     .build()
     );

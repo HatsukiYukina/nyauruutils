@@ -45,6 +45,7 @@ dependencies {
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
     modImplementation include("eu.pb4:polymer-core:0.9.19+1.21.1") //polymer
     modImplementation include("eu.pb4:polymer-resource-pack:0.9.19+1.21.1") //polymer
+    modImplementation include("eu.pb4:polymer-blocks:0.9.19+1.21.1")
 }
 
 processResources {
