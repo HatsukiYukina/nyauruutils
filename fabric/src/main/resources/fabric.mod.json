@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "nyauruutils",
+  "version": "${version}",
+  "name": "NyauruUtils",
+  "description": "Ayaka",
+  "authors": [
+    ""
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/nyauruutils/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.nyauru.nyauruutils.fabric.NyauruutilsFabric"
+    ],
+    "client": [
+      "org.nyauru.nyauruutils.fabric.client.NyauruutilsFabricClient"
+    ]
+  },
+  "mixins": [
+    "nyauruutils.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

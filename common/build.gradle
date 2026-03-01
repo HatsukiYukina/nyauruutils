@@ -1,0 +1,22 @@
+architectury {
+    common rootProject.enabled_platforms.split(',')
+}
+repositories {
+    // Add repositories to retrieve artifacts from in here.
+    // You should only use this when depending on other mods because
+    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
+    // for more information about repositories.
+    maven { url 'https://maven.nucleoid.xyz' }
+}
+
+dependencies {
+    // We depend on Fabric Loader here to use the Fabric @Environment annotations,
+    // which get remapped to the correct annotations on each platform.
+    // Do NOT use other classes from Fabric Loader.
+    modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+    modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
+    modApi ("eu.pb4:polymer-core:0.9.19+1.21.1") //polymer
+    modApi ("eu.pb4:polymer-resource-pack:0.9.19+1.21.1")
+}
