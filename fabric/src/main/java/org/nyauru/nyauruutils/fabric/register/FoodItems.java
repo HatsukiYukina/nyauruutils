@@ -70,5 +70,10 @@ public class   FoodItems {
                             .stacksTo(64)
                     , Items.ROTTEN_FLESH,
                     spicyStripModel
-            ));
+            ){
+                @Override
+                public int getPolymerCustomModelData(ItemStack itemStack, ServerPlayer player) {
+                    return 2;
+                }
+            });
 }
